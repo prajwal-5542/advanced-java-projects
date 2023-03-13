@@ -1,5 +1,4 @@
-//print numbers 5 to 1 three times using thread
-package prajwal;
+//print numbers 5 to 1  three times using Thread
 class printThread extends Thread {
 	String name;
 	printThread(String name) {
@@ -14,9 +13,8 @@ class printThread extends Thread {
 		}catch(Exception e) {}
 	}
 }
-public class test11 {
-
-	public static void main(String[] args) throws Exception {
+public class Test11 {
+	public static void main(String[] args)throws Exception {
 		printThread t1=new printThread("first");
 		printThread t2=new printThread("second");
 		printThread t3=new printThread("third");
@@ -34,6 +32,8 @@ public class test11 {
 		System.out.println(t1.isAlive());
 		System.out.println(t2.isAlive());
 		System.out.println(t3.isAlive());
+		System.out.println("main ends");
+
 	}
 
 }
